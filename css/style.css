@@ -1,0 +1,162 @@
+body {
+    margin:0;
+}
+#title{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+}
+#title:hover{
+    cursor: pointer;
+    color: orange;
+}    
+header {
+    overflow: hidden;
+    background-color: rgb(126, 196, 141);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav{
+    float: right;
+}
+header a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header a:hover {
+    color: orange;
+}
+
+main {
+    padding-top: 16px;
+    margin-top: 85px;
+    /* height: 1500px; */
+}
+
+.tile{
+    width: 40%;
+    height: 200px;
+    margin: 10px;
+    padding: 30px;
+    background-color: ivory;
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, .4);
+    color: #000;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+}
+.tile h1{
+    font-weight: 200;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .4);
+    text-align: center;
+}
+.tile h2{
+    font-weight: 200;
+    margin: 20px 0 0 0;
+    font-style: italic;
+    text-align: center;
+}
+.tile p{
+    font-weight: 200;
+    margin: 20px 0 0 0;
+    /* text-align: center; */
+}
+.tile:hover{
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, .8);
+
+}
+#sec1 {
+    /* margin-top: 15px; */
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+    background-image: url("../images/earth.webp");
+    background-attachment: fixed;
+    color: white;
+}
+#sec2 {
+    background-image: url("../images/white_paper.jpg");
+    /* background-color: orange; */
+    background-repeat: repeat;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 20px;
+
+}
+#sec2 .tile .more{
+    background-color: rgb(59, 59, 59);
+    width: 120px;
+    height: 50px;
+    
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 10%;
+}
+#sec2 .tile .more:hover{
+    box-shadow: 2px 2px 5px #000;    
+}
+
+.imgbox img { max-width: 100%; height: auto; }
+
+.imgbox{
+    width: 20%;
+    float: left;
+    margin: 20px;
+}
+footer{
+    text-align: center;
+}
+
+div#gallery{
+    width:450px;
+    height:250px;
+    margin:0 auto;
+    padding:10px;
+}
+div#gallery ul li{
+    position:relative;
+    list-style:none;
+    float:left;
+    margin:0 10px 10px 0;
+}
+div#gallery ul li img.small{
+    width:120px;
+    height:90px;
+    cursor:pointer;
+}
+div#gallery ul li img.pic{
+    position:absolute;
+    left:110px;
+    top:80px;
+    width:320px;
+    height:240px;
+    border:3px solid black;
+    z-index:10;
+    
+    visibility:hidden;
+    /* display:none; */
+    /* opacity:0; */
+
+}
+/* 작은사진, 확대사진에 hover시 모두 보여줌. */
+div#gallery ul li img.small:hover+img.pic, div#gallery ul li img.pic:hover{
+    
+    visibility:visible;
+    /* display:block; */
+    /* opacity:1; */
+    
+}
